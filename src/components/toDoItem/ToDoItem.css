@@ -1,0 +1,48 @@
+.to-do-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f8f9fa;
+}
+.to-do-container .to-do-detail{
+    width: 70%;
+    display: flex;
+}
+.to-do-container .to-do-detail .task{
+    margin: 1%;
+    font-weight: bold;
+}
+
+.to-do-container .to-do-detail .description{
+    margin: 1%;
+    color: #6c757d;
+}
+
+.to-do-container .to-do-detail .delete{
+    margin: 1%;
+    color: #0d6efd;
+    cursor: pointer;
+
+}
+.to-do-container .to-do-detail .edit{
+    margin: 1%;
+    color: #28e2aa;
+    cursor: pointer;
+
+}
+.to-do-container .toggel-complete{
+    padding: 1%;
+}
+.to-do-container .toggel-complete .complete-bt-no{
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.to-do-container .toggel-complete .complete-bt{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
