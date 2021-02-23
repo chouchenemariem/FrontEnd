@@ -5,7 +5,7 @@ function FormAddTask() {
     const { addTask, editTask, editItem } = useContext(TaskListContext);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-
+    // if editItem == null this function will add task else will edit task
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!editItem) {
@@ -17,6 +17,7 @@ function FormAddTask() {
 
         }
     }
+    // if editItem !== null inputs will be filled with values 
     useEffect(() => {
         if (editItem) {
             setTitle(editItem.title);

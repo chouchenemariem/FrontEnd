@@ -16,6 +16,8 @@ function App() {
 
   );
 }
+
+// export App with store
 function AppWithStore() {
 
   return (

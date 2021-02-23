@@ -7,10 +7,12 @@ function LoginForm() {
     const [error, setError] = useState('');
     const authentification = useContext(AuthContext);
 
+    //Login
     const submitHandler = e => {
         e.preventDefault();
-        console.log({ email, password })
+        //Default email="test@test.com" password="test"
         if (email == "test@test.com" && password == "test") {
+            //using localStorage to save user
             localStorage.setItem('password', password);
             localStorage.setItem('email', email);
             authentification.setAuth({ password, email });
