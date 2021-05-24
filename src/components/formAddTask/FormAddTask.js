@@ -17,6 +17,7 @@ function FormAddTask() {
 
         }
     }
+
     // if editItem !== null inputs will be filled with values 
     useEffect(() => {
         if (editItem) {
